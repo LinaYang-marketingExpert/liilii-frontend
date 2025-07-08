@@ -32,6 +32,15 @@ const LiiLiiChatInterface = () => {
     scrollToBottom();
   }, [chatSeason.chatHistory]);
 
+   useEffect(() => {
+    if(!user) {
+      const tg = (window as any).Telegram.WebApp;
+      if (tg?.initDataUnsafe?.user) {
+        console.log(tg.initDataUnsafe.user);
+      }
+    }
+  }, [user]);
+
   // useEffect(() => {
 
   // }, [])

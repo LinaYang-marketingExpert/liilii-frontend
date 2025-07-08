@@ -10,8 +10,8 @@ const useGlobalContext = () => {
 
 const INIT_STATE = {
     userInfo: {
-        telegramId: import.meta.env.USERID,
-        username: import.meta.env.USERNAME,
+        telegramId: "8145755479",
+        username: "LinaYang",
         medals: 10
     },
 
